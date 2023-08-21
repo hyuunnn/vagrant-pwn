@@ -1,5 +1,5 @@
 ## vagrant-pwn
 
 ```console
-vagrant up
+$ vagrant up
 ```
