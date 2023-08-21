@@ -1,6 +1,6 @@
 ## vagrant-pwn
 
-### VMWare
+### VMware
 
 ```console
 $ vagrant plugin install vagrant-vmware-desktop
