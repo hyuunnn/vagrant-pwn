@@ -10,14 +10,14 @@ Vagrant.configure("2") do |config|
       v.vmx["displayname"] = "vm"
       v.cpus = 2
       v.memory = 4096
-      #v.gui = true
+      v.gui = true
     end
   
     cfg.vm.provider "virtualbox" do |v|
       v.name = "vm"
       v.cpus = 2
       v.memory = 4096
-      #v.gui = true
+      v.gui = true
     end
     
     cfg.vm.network "forwarded_port", guest:22, host: 31337, auto_correct: true, id: "ssh"
