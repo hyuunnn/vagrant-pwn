@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
       v.name = name
       v.cpus = cpu
       v.memory = memory
-      v.gui = true
+      #v.gui = true
     end
     
     cfg.vm.network "private_network", ip: "10.10.10.10"
