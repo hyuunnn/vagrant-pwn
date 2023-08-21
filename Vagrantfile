@@ -6,17 +6,21 @@ Vagrant.configure("2") do |config|
     cfg.vm.box = "generic/ubuntu2204"
     #cfg.vm.host_name = "pwn"
     
+    name = "vm"
+    cpu = 2
+    memory = 2048
+
     cfg.vm.provider "vmware_desktop" do |v|
-      v.vmx["displayname"] = "vm"
-      v.cpus = 2
-      v.memory = 4096
+      v.vmx["displayname"] = name
+      v.cpus = cpu
+      v.memory = memory
       v.gui = true
     end
   
     cfg.vm.provider "virtualbox" do |v|
-      v.name = "vm"
-      v.cpus = 2
-      v.memory = 4096
+      v.name = name
+      v.cpus = cpu
+      v.memory = memory
       v.gui = true
     end
     
