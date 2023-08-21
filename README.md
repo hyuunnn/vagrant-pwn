@@ -16,3 +16,9 @@ $ vagrant up --provider vmware_desktop
 ```console
 $ vagrant up --provider virtualbox
 ```
+
+### Usage
+
+```console
+$ vagrant ssh or ssh vagrant@10.10.10.10
+```
