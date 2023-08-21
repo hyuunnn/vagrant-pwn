@@ -11,8 +11,8 @@ Vagrant.configure("2") do |config|
     end
     #cfg.vm.host_name = "pwn"
     cfg.vm.network "forwarded_port", guest:22, host: 31337, auto_correct: true, id: "ssh"
-    cfg.vm.synced_folder ".", "/vagrant", disabled: true
+    cfg.vm.synced_folder ".", "/vagrant", disabled: false
     cfg.vm.provision "shell", path: "config.sh"
-    cfg.vm.provision "shell", path: "install_pkg.sh"
+    cfg.vm.provision "shell", path: "install_pkg.sh", privileged: false
   end
 end
