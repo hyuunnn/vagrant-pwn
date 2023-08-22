@@ -1,6 +1,8 @@
 ## vagrant-pwn
 
-### VMware
+### Setup
+
+**VMware**
 
 <a href="https://developer.hashicorp.com/vagrant/docs/providers/vmware/installation">vagrant docs</a>
 
@@ -11,7 +13,7 @@ $ vagrant plugin install vagrant-vmware-desktop
 $ vagrant up --provider vmware_desktop
 ```
 
-### Virtualbox
+**Virtualbox**
 
 ```console
 $ vagrant up --provider virtualbox
