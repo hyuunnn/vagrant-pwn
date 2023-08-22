@@ -20,5 +20,5 @@ $ vagrant up --provider virtualbox
 ### Usage
 
 ```console
-$ vagrant ssh or ssh vagrant@localhost -p31337
+$ vagrant ssh or ssh vagrant@localhost -p31337 or ssh vagrant@10.10.10.10 (Only Virtualbox)
 ```
