@@ -1,0 +1,27 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.define "vm" do |cfg|
+    cfg.vm.box = "gusztavvargadr/windows-10"
+    #cfg.vm.host_name = "win"
+    
+    name = "win"
+    cpu = 2
+    memory = 4096
+
+    cfg.vm.provider "vmware_desktop" do |v|
+      v.vmx["displayname"] = name
+      v.cpus = cpu
+      v.memory = memory
+      v.gui = true
+    end
+
+    cfg.vm.provider "virtualbox" do |v|
+      v.name = name
+      v.cpus = cpu
+      v.memory = memory
+      v.gui = true
+    end
+  end
+end
