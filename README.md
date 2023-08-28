@@ -1,9 +1,9 @@
 # vagrant-pwn
 
-## linux
+## Linux
 
 <a href="https://github.com/hyuunnn/vagrant-pwn/tree/main/linux">README.md</a>
 
-## windows
+## Windows (WIP)
 
 <a href="https://github.com/hyuunnn/vagrant-pwn/tree/main/windows">README.md</a>
