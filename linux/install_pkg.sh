@@ -46,3 +46,10 @@ gem install one_gadget
 # etc
 pip3 install requests
 sudo apt-get install -y wget make vim net-tools
+
+# .vimrc
+echo "set nu" >> ~/.vimrc
+echo "set mouse=a" >> ~/.vimrc
+echo "set ignorecase" >> ~/.vimrc
+echo "set hlsearch" >> ~/.vimrc
+echo "set incsearch" >> ~/.vimrc
