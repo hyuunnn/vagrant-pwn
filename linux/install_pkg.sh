@@ -34,6 +34,10 @@ cd .pwndbg
 ./setup.sh
 cd ../
 
+# Pwngdb
+git clone https://github.com/scwuaptx/Pwngdb .Pwngdb
+echo "source ~/.pwndbg/gdbinit.py\nsource ~/.Pwngdb/pwngdb.py\nsource ~/.Pwngdb/angelheap/gdbinit.py\ndefine hook-run\npython\nimport angelheap\nangelheap.init_angelheap()\nend\nend" >> ~/.gdbinit
+
 # seccomp-tools, one_gadget
 sudo apt-get install -y gcc ruby-dev
 gem install seccomp-tools
