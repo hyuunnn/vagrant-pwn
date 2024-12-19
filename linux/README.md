@@ -1,6 +1,10 @@
 ## Setup
 
-### VMware
+`localhost:31337`, `192.168.100.121:22` Ubuntu 24.04
+
+`vagrant/vagrant` default ID/PW
+
+### VMWare
 
 <a href="https://developer.hashicorp.com/vagrant/docs/providers/vmware/installation">vagrant docs</a>
 
@@ -20,6 +24,8 @@ $ vagrant up --provider virtualbox
 ## Usage
 
 ```console
-$ vagrant ssh or ssh vagrant@localhost -p31337 or ssh vagrant@10.10.10.10 (Only Virtualbox)
+$ ssh vagrant@localhost -p31337
+$ ssh vagrant@192.168.100.121 (Only Virtualbox)
 $ vagrant@localhost's password: vagrant
+$ vagrant destroy (Deleting the VM)
 ```
