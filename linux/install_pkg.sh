@@ -10,6 +10,8 @@ sudo apt-get install -y libc6-dev-i386 libc6-dbg libncurses5:i386 libstdc++6:i38
 # miasm, radare2, pwntools, ROPgadget, capstone-engine, keystone-engine, etc..
 # https://stackoverflow.com/questions/29310688/sudo-pip-install-vs-pip-install-user
 sudo apt-get install -y python3 python3-pip python3-dev python3-setuptools git libssl-dev libffi-dev build-essential
+# https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3
+python3 -m pip config set global.break-system-packages true
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade pwntools
 pip3 install keystone-engine
@@ -48,8 +50,8 @@ echo "end" >> ~/.gdbinit
 
 # seccomp-tools, one_gadget
 sudo apt-get install -y gcc ruby-dev
-gem install seccomp-tools
-gem install one_gadget
+sudo gem install seccomp-tools
+sudo gem install one_gadget
 
 # libc-database
 # git clone https://github.com/niklasb/libc-database
